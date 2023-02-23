@@ -3,46 +3,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario para atracar </title>
+    
 </head>
 <body>
+    <header> 
+        <h1>Formulario para atracar</h1>
+        </header>
+
+    <form action="https://testapi.omarcardona.com/"  method="post"> 
     <label>Nombre:</label>
-     <input type="text"> <BR></BR>
+     <input  type="text"> <BR></BR>
 
      <label>Email:</label>
-     <input type="email">  <BR></BR>
+     <input type="email" id="iemail" name="email">  <BR></BR>
 
      <label>URL:</label>
-     <input type="url"> <BR></BR>
+     <input type="url" id="iURL" name="URL"> <BR></BR>
 
      <label>Fecha:</label>
-     <input type="date"> <BR></BR>
+     <input type="date" id="ifecha" name="fecha"> <BR></BR>
 
      <label>Time:</label>
-     <input type="time"> <BR></BR>
+     <input type="time" id="itiempo" name="tiempo"> <BR></BR>
 
      <label>Fecha y Hora:</label>
-     <input type="datetime-local" id="idatetime" name> <BR></BR>
+     <input type="datetime-local" id="ihorayfecha" name="horayfecha"> <BR></BR>
 
      <label>Mes:</label>
-     <input type="month" id="imonth" name="Mes" > <BR></BR>
+     <input type="month" id="imes" name="mes" > <BR></BR>
 
      <label>Semana:</label>
-     <input type="week"> <BR></BR>
+     <input type="week" id="isemana" name="semana"> <BR></BR>
     
      <label>Fecha:</label>
-     <input type="date"> <BR></BR>
+     <input type="date" id="ihorayfecha" name="horayfecha"> <BR></BR>
 
      <label>Numero:</label>
-     <input type="number" min="-10 "max="10"> <BR></BR>
+     <input type="number" min="-10 "max="10" id="inumero" name="numero"> <BR></BR>
 
      <label>Telefono:</label>
-     <input type="tel"> <BR></BR>
+     <input type="tel" id="itelefono" name="telefono"> <BR></BR>
 
      <label>Busqueda:</label>
-     <input type="search"> <BR></BR>
+     <input type="search" id="ibusqueda" name="busqueda"> <BR></BR>
 
      <label>Color:</label>
-     <input type="color">    <BR></BR>
+     <input type="color" id="icolor" name="color">  <BR></BR>
+
+     <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
