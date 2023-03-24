@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function mensaje (){
+            alert ('Se ejecuto')
+
+        }
+        function main(){
+           const btn2= document.getElementById("btn2");
+           btn2.onclick=mensaje;
+
+           const btn3= document.getElementById("btn3");
+           btn3.addEventListener("click",mensaje);
+        }
+        window.onload=main
+    </script>
+</head>
+
+<body>
+    <button onclick="mensaje()">Boton 1</button>
+    <button id="btn2">Boton 2</button>
+    <button id="btn3">Boton 3</button>
+</body>
+</html>

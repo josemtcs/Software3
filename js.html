@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var generado
+        function main(){
+            generado = Math.floor(Math.random() * 100);
+            console.log(generado)
+        }
+        
+        function adivinar()
+        {
+           const txt = document.getElementById("txtNumero");
+           if (txt.value==generado){
+            alert("Adivinaste el numero")
+           }else{
+            alert("El numero no es, sigue intentanto")
+           }
+
+          
+        }
+        window.onload = main;
+    </script>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>Adivina el numero</td>
+                <td><input type="text" id="txtNumero"></td>
+                <tr>
+                </tr>
+
+                <td colspan="2">
+                <button onclick="adivinar()">Adivinar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
